@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="style_quiz.css">
+    <link rel="shortcut icon" href="sources/icon.png" type="image/png">
+	<title>Quiz</title>
+</html>
+<body>
+    <div class="content">
+        <div class="quiz">
+            <form method="POST" action="mailto:alemcleod@gmail.com" enctype="text/plain">
+                <label for="login">Login:</label><br>
+                <input type="text" id="login" name="login" placeholder="login" required><br>
+                <label for="mail">Email:</label><br>
+                <input type="email" id="mail" name="email" placeholder="example@com"><br>
+                <label for="pass">Password:</label><br>
+                <input type="password" id="pass" name="pass"><br>
+                <textarea cols="50" rows="10" placeholder="Your text"></textarea><br>
+                <p>Your favourite programming language: </p>
+                <select>
+                    <option disabled>Pick language</option>
+                    <option value="C++">C++</option>
+                    <option value="Python" selected>Python</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="C#">C#</option>
+                </select>
+                <p>За допомогою якого тега реалізовують якорі?</p>
+                <input type="radio" id="div" name="tag">
+                <label for="div">div</label><br>
+                <input type="radio" id="nav" name="tag">
+                <label for="nav">nav</label><br>
+                <input type="radio" id="a" name="tag">
+                <label for="a">a</label><br>
+                
+                <p>Ваша стать:</p>
+                <input type="radio" id="f" name="gender">
+                <label for="f">Female</label><br>
+                <input type="radio" id="m" name="gender">
+                <label for="m">Male</label><br>
+
+                <p>Якими мовами програмування ви володієте?</p>
+                <input type="checkbox" id="python1" name="lang1">
+                <label for="python1"> Python</label><br>
+                <input type="checkbox" id="cpp1" name="lang1">
+                <label for="cpp1"> C++</label><br>
+                <input type="checkbox" id="js1" name="lang1">
+                <label for="js1"> Javascript</label><br>
+
+                  
+                <button type="submit">Send</button>
+                <button type="reset">Clear</button> 
+                <br>
+            </form>
+        </div>
+    </div>
+</body>
